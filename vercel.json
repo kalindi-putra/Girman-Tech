@@ -4,22 +4,12 @@
         {
             "src": "rbac_project/wsgi.py",
             "use": "@vercel/python",
-            "config": { "runtime": "python3.9" }
-        },
-        {
-            "src": "build_files.sh",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "staticfiles",
+            "config": { 
                 "runtime": "python3.9"
             }
         }
     ],
     "routes": [
-        {
-            "src": "/static/(.*)",
-            "dest": "/static/$1"
-        },
         {
             "src": "/(.*)",
             "dest": "rbac_project/wsgi.py"
