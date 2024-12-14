@@ -1,6 +1,10 @@
 #!/bin/bash
-echo "Installing dependencies..."
-pip install -r requirements.txt
+# Ensure we're in the project directory
+cd "$(dirname "$0")"
 
-echo "Collecting static files..."
-python manage.py collectstatic --noinput --clear
+# Install Python dependencies
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
+
+# Collect static files
+python3 manage.py collectstatic --noinput --clear
