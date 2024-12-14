@@ -1,9 +1,0 @@
-Found 6 test(s).
-Type 'yes' if you would like to try deleting the test database 'test_defaultdb', or 'no' to cancel: Found 6 test(s).
-Type 'yes' if you would like to try deleting the test database 'test_defaultdb', or 'no' to cancel: System check identified no issues (0 silenced).
-Found 6 test(s).
-Type 'yes' if you would like to try deleting the test database 'test_defaultdb', or 'no' to cancel: System check identified no issues (0 silenced).
-create
-<rbac.views.UserViewSet object at 0x0000022BC2B258B0>
-create
-<rbac.views.UserViewSet object at 0x0000022BC2BE45C0>
