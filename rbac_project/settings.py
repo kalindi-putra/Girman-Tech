@@ -23,9 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h8h6vskswxyotdpd$n$d@!9c7ia3qo*!(#p+=rvko(+4rto+oc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+
+# Add these to your existing settings
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'localhost', '127.0.0.1']
+
+
+
+# For Vercel deployment
+#WSGI_APPLICATION = 'rbac_project.wsgi.application'
 
 
 # Application definition
